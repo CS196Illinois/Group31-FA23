@@ -1,4 +1,4 @@
-﻿Name ,Activity ,Skill Level ,Availibility ,Location Preference
+Name,Activity,Skill Level,Availibility,Location Preference
 Emma Smith,Hiking,1,"M: 8 am - 10 am, T: 1 pm - 3 pm, W: 5 pm - 7 pm, TH: 9 pm - 11 pm, F: 11 am - 1 pm",1
 Liam Johnson,Writing,2,"M: 10 am - 12 pm, T: 4 pm - 6 pm, W: 2 pm - 4 pm, TH: 7 pm - 9 pm, F: 1 pm - 3 pm",3
 Olivia Brown,Biking,3,"M: 9 am - 11 am, T: 3 pm - 5 pm, W: 6 pm - 8 pm, TH: 8 am - 10 am, F: 2 pm - 4 pm",5
