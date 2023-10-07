@@ -6,3 +6,5 @@ Group Name: Group 31
 Team Members: tanvik4, advaitt3, tejass3, chenf3,Jroma27, suprit2
 
 Project Manager: billjz2
+
+If you want to run the flask file use `flask -run`
