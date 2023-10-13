@@ -19,7 +19,7 @@ def testPopulation(population):
     return(npArray)
 
 #calculates number of clusters formulaically
-def calculateClusters(population, targetValue = 25):
+def calculateClusters(population, targetValue = 7):
     clusters = 1
     while(int(population / clusters) >= targetValue):
         clusters = clusters + 1
@@ -49,13 +49,13 @@ def determineCluster(model, person):
 def randomPerson():
     charOne = rand.randint(1, 50)
     charTwo = rand.randint(1, 50)
-    charThree = rand.randint(1, 50)
-    return([[charOne, charTwo, charThree]])
+    #charThree = rand.randint(1, 50)
+    return([[charOne, charTwo]])
 
 #test code
 popSize = 1000
 testPop = testPopulation(popSize)
 randPer = randomPerson()
 
-print(determineCluster(kmeanModel(popSize, testPop), randPer))
-print(determineCluster(affinityPropModel(testPop), randPer))
+#print(determineCluster(kmeanModel(popSize, testPop), randPer))
+#print(determineCluster(affinityPropModel(testPop), randPer))
