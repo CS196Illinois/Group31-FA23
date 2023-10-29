@@ -45,7 +45,7 @@ def get_cluster(person):
     personNP = personDF.to_numpy()
     clusteringModel = runModel(modelDF)
     cluster = findCluster(clusteringModel, [personNP])
-    return(jsonify({"person": str(cluster)}))
+    return(jsonify({personName: str(cluster)}))
 
 #posts an entry via postman to update the global DataFrame--use postman under a format of {"FirstName LastName": [Skill Level, Location Preference]}
 @app.route("/add", methods = ['POST'])
