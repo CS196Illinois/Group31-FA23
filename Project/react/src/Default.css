@@ -9,7 +9,7 @@
   pointer-events: none;
 }
 
-/*styling for the arrangement of the main content of the webpage*/
+/*styling for the arrangement of the  main content of the webpage*/
 .App-main {
   background: linear-gradient(skyblue, blue);
   min-height: 86vh;
@@ -32,6 +32,7 @@
 .App-main-body {
   font-size: calc(10px + 2vmin);
   color: blanchedalmond;
+
 }
 
 /*styling for the layout of the navigation bar*/
@@ -47,7 +48,7 @@
 }
 
 /*styling for the links in the navigation bar*/
-.App-navbar-link {
+.Default-link {
   color: blanchedalmond;
   font-size: calc(10px + 1vmin);
   text-decoration: none;
@@ -69,5 +70,24 @@
 .App-footer-text {
   color: blanchedalmond;
   font-size: calc(10px + 1vmin);
+  text-decoration: none;
+}
+
+/*styling for the main body of the other pages*/
+.Page-main-body {
+  font-size: calc(10px + 1vmin);
+  color: blanchedalmond;
+  padding-left: 8vmin;
+  padding-right: 8vmin;
+}
+
+/*styling for pictures on the pages*/
+.Page-picture {
+  height: 16vmin;
+  padding: 2vmin;
+}
+
+/*styling for links on the pages*/
+.Page-link {
   text-decoration: none;
 }
