@@ -1,0 +1,129 @@
+/*styling to remain constant throughout the webpage*/
+.App {
+  text-align: center;
+}
+
+/*styling for the logo*/
+.App-logo {
+  height: 30vmin;
+  pointer-events: none;
+}
+
+/*styling for the arrangement of the  main content of the webpage*/
+.App-main {
+  background: linear-gradient(skyblue, blue);
+  min-height: 86vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5vh;
+}
+
+/*styling for the title text of the main part of the webpage*/
+.App-main-title {
+  color: #f58142;
+  font-size: calc(10px + 7vmin);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bolder;
+}
+
+/*styling for the body text of the main part of the webpage*/
+.App-main-body {
+  font-size: calc(10px + 2vmin);
+  color: blanchedalmond;
+
+}
+
+/*styling for the layout of the navigation bar*/
+.App-navbar {
+  background-color: #f58142;
+  min-height: 7vh;
+  display: flex;
+  flex-direction: row;
+  padding-left: 2vmin;
+  padding-right: 2vmin;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/*styling for the links in the navigation bar*/
+.Default-link {
+  color: blanchedalmond;
+  font-size: calc(10px + 1vmin);
+  text-decoration: none;
+}
+
+/*styling for the layout of the footer*/
+.App-footer {
+  background-color: #f58142;
+  min-height: 7vh;
+  display: flex;
+  flex-direction: row;
+  padding-left: 2vmin;
+  padding-right: 2vmin;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/*styling for the text in the footer*/
+.App-footer-text {
+  color: blanchedalmond;
+  font-size: calc(10px + 1vmin);
+  text-decoration: none;
+}
+
+/*styling for the main body of the other pages*/
+.Page-main-body {
+  font-size: calc(10px + 1vmin);
+  color: blanchedalmond;
+  padding-left: 8vmin;
+  padding-right: 8vmin;
+}
+
+/*styling for pictures on the pages*/
+.Page-picture {
+  height: 16vmin;
+  padding: 2vmin;
+}
+
+/*styling for links on the pages*/
+.Page-link {
+  text-decoration: none;
+}
+
+.Auth-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.Auth-form {
+  width: 420px;
+  box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.Auth-form-content {
+  padding-left: 12%;
+  padding-right: 12%;
+}
+
+.Auth-form-title {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 24px;
+  color: rgb(34, 34, 34);
+  font-weight: 800;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(34, 34, 34);
+}
