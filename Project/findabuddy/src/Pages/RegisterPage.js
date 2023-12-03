@@ -17,8 +17,7 @@ export default function RegisterPage(){
             password: password
         })
         .then(function (response) {
-             console.log(response);
-            navigate("/");
+            console.log(response);
         })
         .catch(function (error) {
             console.log(error, 'error');
@@ -26,6 +25,7 @@ export default function RegisterPage(){
                 alert("Invalid credentials");
             }
         });
+        navigate("/");
     };
      
     let imgs = [

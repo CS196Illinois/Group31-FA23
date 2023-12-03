@@ -7,8 +7,8 @@ function Navbar() {
         <Link className="Default-link" to = "/">Home</Link>
         <Link className="Default-link" to = "/about">About Us</Link>
         <Link className="Default-link" to = "/pair">Pair Up</Link>
-        <Link className="Default-link" to = "/matches">Matches</Link>
-        <Link className="Default-link" to = "/review">Reviews / Feedback</Link>
+        <Link className="Default-link" to = "/profile">Profile</Link>
+        <Link className="Default-link" to = "/info">Info</Link>
         <Link className="Default-link" to = "/login">Log In / Sign Up</Link>
       </div>
     )

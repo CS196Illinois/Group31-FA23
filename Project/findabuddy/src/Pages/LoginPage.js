@@ -26,7 +26,6 @@ export default function LoginPage(){
             .then(function (response) {
                 console.log(response);
                 //console.log(response.data);
-                navigate("/");
             })
             .catch(function (error) {
                 console.log(error, 'error');
@@ -35,6 +34,7 @@ export default function LoginPage(){
                 }
             });
         }
+        navigate("/");
     }
 
      

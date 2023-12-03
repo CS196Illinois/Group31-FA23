@@ -3,13 +3,18 @@ import pandas as pd
 from sklearn.cluster import *
 import numpy as np
 from flask import Flask, jsonify, request, url_for, json, session
+from flask_session import Session
 from flask_bcrypt import Bcrypt #pip install Flask-Bcrypt = https://pypi.org/project/Flask-Bcrypt/
 from flask_cors import CORS, cross_origin #ModuleNotFoundError: No module named 'flask_cors' = pip install Flask-Cors
 from models import db, User
+import time
 
 app = Flask(__name__)
- 
+app.config["SESSION_PERMANENT"] = True
+app.config["SESSION_TYPE"] = "filesystem"
+Session(app)
 app.config['SECRET_KEY'] = 'cairocoders-ednalan'
+app.secret_key = 'cairocoders-ednalan'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///flaskdb.db'
  
 SQLALCHEMY_TRACK_MODIFICATIONS = False
@@ -91,8 +96,10 @@ def groupByAvailability(name):
         if set(free) & set(availability) and df.loc[i]["Activity"] == df.loc[name]["Activity"]:
             common.append(i)
     return jsonify(common)
-@app.route('/name/<string:name>', methods=['GET'])
-def display(name):
+@app.route('/name', methods=['GET'])
+def display():
+    name = session.get("user_id")
+    print(session)
     name = name.replace("_", " ")
     return jsonify({name: df.loc[name].to_json()})
 @app.route("/signup", methods=["POST"])
@@ -110,7 +117,7 @@ def signup():
     db.session.add(new_user)
     db.session.commit()
  
-    session["user_id"] = new_user.id
+    session["user_id"] = email
  
     return jsonify({
         "id": new_user.id,
@@ -130,7 +137,11 @@ def login_user():
     if not bcrypt.check_password_hash(user.password, password):
         return jsonify({"error": "Unauthorized"}), 401
       
-    session["user_id"] = user.id
+    session["user_id"] = "abcde@gmail.com"
+    print(session)
+    print(session.get("user_id"))
+
+    time.sleep(0.5)
   
     return jsonify({
         "id": user.id,
